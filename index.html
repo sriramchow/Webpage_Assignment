@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Haven</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .menu-section {
+      margin-bottom: 3rem;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 1.5rem;
+    }
+
+    .menu-item-description {
+      flex: 1;
+    }
+
+    .menu-item-description h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #b5651d;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .video-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    button {
+      background-color: #b5651d;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #8b4513;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Coffee Haven</h1>
+    <p>Your daily dose of coffee and comfort</p>
+  </header>
+
+  <nav>
+    <a href="#coffee">Coffee</a>
+    <a href="#pastries">Pastries</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="menu-section" id="coffee">
+      <h2>Coffee Menu</h2>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Espresso">
+        <div class="menu-item-description">
+          <h3>Espresso <span class="price">$3.00</span></h3>
+          <p>Strong and rich, perfect for a quick caffeine boost.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="Latte">
+        <div class="menu-item-description">
+          <h3>Latte <span class="price">$4.50</span></h3>
+          <p>Smooth blend of espresso and steamed milk, topped with foam.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1587750055302-712f8e96fc62" alt="Cappuccino">
+        <div class="menu-item-description">
+          <h3>Cappuccino <span class="price">$4.00</span></h3>
+          <p>Classic coffee drink with a perfect balance of espresso, milk, and foam.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="pastries">
+      <h2>Pastries & Snacks</h2>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1604152135912-04a022c49476" alt="Croissant">
+        <div class="menu-item-description">
+          <h3>Croissant <span class="price">$2.50</span></h3>
+          <p>Flaky, buttery goodness perfect with your coffee.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1548365328-8b7e7cb50d71" alt="Muffin">
+        <div class="menu-item-description">
+          <h3>Blueberry Muffin <span class="price">$2.80</span></h3>
+          <p>Soft and sweet with fresh blueberries in every bite.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" id="videos">
+      <h2>Watch How We Brew</h2>
+      <video width="600" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: hello@coffeehaven.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <button onclick="alert('Thanks for visiting Coffee Haven!')">Say Hello</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
